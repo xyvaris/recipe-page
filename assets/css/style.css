@@ -47,21 +47,23 @@ body {
   font-size: var(--fs-base);
   background-color: var(--color-stone-100);
   min-height: 100vh;
+  position: relative;
 }
 
 /* Main Container Outer */
 .content-wrapper {
+  flex: 1;
   width: min(100%, 43.75rem);
   margin: 0 auto;
   background-color: var(--color-white);
   border-radius: 1.25rem;
-  padding: 0 3.125em;
+  padding: 0  3.125em 3.125em 3.125em;
 }
 /* Responsive padding*/
 /* 700px */
 @media (min-width: 43.75em) {
   .content-wrapper {
-    padding: 3.125rem;
+    padding-block-start: 3.125rem;
   }
   body {
     padding: 6.25rem 0;
@@ -173,7 +175,13 @@ tr td:last-child {
 
 /* Footer */
 .attribution {
-  font-size: 0.6875rem;
+  font-size: clamp(0.625rem, 2vw, var(--fs-base));
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1em 0;
+  width: 100%;
   text-align: center;
 }
 .attribution a {
