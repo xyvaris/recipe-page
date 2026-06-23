@@ -94,6 +94,7 @@ h1 {
   color: var(--color-stone-900);
   line-height: 100%;
   margin: 1.09375em 0;
+  font-weight: 500;
 }
 
 h2 {
@@ -120,6 +121,7 @@ li {
   margin: 1.09375rem 0;
 }
 
+
 /* nutrition container */
 .instructions-container,
 .nutritions-container p {
@@ -129,6 +131,7 @@ li {
 li {
   margin-inline-start: 1rem;
   padding-inline-start: 1rem;
+  margin-block-end: 1.25rem;
 }
 
 .prep-container span.strong-text,
