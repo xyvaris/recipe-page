@@ -66,6 +66,10 @@ body {
   body {
     padding: 6.25rem 0;
   }
+  .img-container img {
+    border-radius: 1.25rem;
+    margin-inline: 0;
+  }
 }
 
 /* container inside */
@@ -80,13 +84,6 @@ body {
 
 .img-container img {
   width: min(100%, 37.5rem);
-}
-/* Responsive for radius of image */
-@media (max-width: 43.75em) {
-  .img-container img {
-    border-radius: 1.25rem;
-    margin-inline: 0;
-  }
 }
 
 /* TItle */
